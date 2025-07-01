@@ -1,0 +1,42 @@
+# Bytecode and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# VS Code settings
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Python virtual environments
+venv/
+env/
+ENV/
+
+# Dataset files (optional – if you want to regenerate them each time)
+datasets/*.txt
+
+# Benchmark result files
+*.csv
+*.xlsx
+
+# Screenshots or test run images
+screenshots/
+
+# Word docs or exported analysis
+*.docx
+*.pdf
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Jupyter notebooks (if you end up using any)
+*.ipynb
+.ipynb_checkpoints/
+
+# Test cache (pytest)
+.pytest_cache/
