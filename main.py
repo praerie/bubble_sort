@@ -4,6 +4,7 @@ from algorithms.bubble_sort import bubble_sort
 from algorithms.merge_sort import merge_sort
 from algorithms.heap_sort import heap_sort
 from algorithms.quick_sort import quick_sort
+from algorithms.insertion_sort import insertion_sort
 import os
 
 def main():
@@ -27,10 +28,16 @@ def main():
     #     duration = time_sorting(heap_sort, data.copy())
     #     print(f"{file:<25} | Time: {duration:.2f} ms")
 
-    # quick sort
+    # # quick sort
+    # for file in filenames:
+    #     data = load_dataset(file)
+    #     duration = time_sorting(quick_sort, data.copy())
+    #     print(f"{file:<25} | Time: {duration:.2f} ms")
+
+    # insertion sort 
     for file in filenames:
         data = load_dataset(file)
-        duration = time_sorting(quick_sort, data.copy())
+        duration = time_sorting(insertion_sort, data.copy())
         print(f"{file:<25} | Time: {duration:.2f} ms")
 
 if __name__ == "__main__":
