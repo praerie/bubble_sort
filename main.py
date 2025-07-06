@@ -12,36 +12,42 @@ def main():
     filenames = sorted(os.listdir("datasets"))
 
     # bubble sort 
+    print("Bubble sort:\n")
     for file in filenames:
         data = load_dataset(file)
         duration = time_sorting(bubble_sort, data.copy())
         print(f"{file:<25} | Time: {duration:.2f} ms")
 
     # merge sort
+    print("Merge sort:\n")
     for file in filenames:
         data = load_dataset(file)
         duration = time_sorting(merge_sort, data.copy())
         print(f"{file:<25} | Time: {duration:.2f} ms")
 
     # heap sort
+    print("Heap sort:\n")
     for file in filenames:
         data = load_dataset(file)
         duration = time_sorting(heap_sort, data.copy())
         print(f"{file:<25} | Time: {duration:.2f} ms")
 
     # quick sort
+    print("Quick sort:\n")
     for file in filenames:
         data = load_dataset(file)
         duration = time_sorting(quick_sort, data.copy())
         print(f"{file:<25} | Time: {duration:.2f} ms")
 
     # insertion sort 
+    print("Insertion sort:\n")
     for file in filenames:
         data = load_dataset(file)
         duration = time_sorting(insertion_sort, data.copy())
         print(f"{file:<25} | Time: {duration:.2f} ms")
 
     # selection sort 
+    print("Selection sort:\n")
     for file in filenames:
         data = load_dataset(file)
         duration = time_sorting(selection_sort, data.copy())
